@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everlyn Muthoni</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+       <nav>
+        <span class="logo"><span style="color:gold">E</span>VERLYN.</span>
+            <ul id="sidemenu">
+           <li><a href="#header">Home</a></li> 
+           <li><a href="#about">About Me</a></li>
+            <li><a href="#services">My Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li> <a href="#contact">contact</a></li>
+            <li><a href="#" class="icons" onclick="closemenu()">X</a></li>
+        </ul>
+        <img class="icons" src="./images/hamburger.png" width="60px" alt="hamburger" onclick="openmenu()">
+       </nav>
+       <header>
+        <div class="intro">
+            <p >Hello,</p>
+            <h1 >
+              I'm <span style="color:gold">Everlyn Muthoni</span>
+            </h1>
+            <h3>A Fullstack Web Developer</h3>
+            <h4>From Kenya.</h4>
+        </div>
+       </header>
+    </div>
+</div>  
+<div id="about">
+    <div class="about">
+      <div class="row">
+        <div class="about-col-1">
+            <img src="./images//IMG_20230713_101758_528.jpg" alt="My about image">
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I am a passionate fullstack web developer who has gained experience through peer learning and also through training during attachment periods.
+            </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                <p class="tab-links"  onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                    <li><span>Web Development</span><br>Web app Development</li>
+                    <li><span>App Development</span><br>Building Androin/iOS apps</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2023-current</span><br>Design Training using Figma and webflow</li>
+                    <li><span>2024</span><br>Web app Development training at teach2give</li>
+                    <li><span>2023</span><br>Attachment at wayamoja company on networking</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2021-2025</span><br>Degree in Software Engineering at Kirinyaga University</li>
+                    <li><span>2021</span><br>Computer course at7 Kagumo Ngandu college</li>
+                    <li><span>2017-2021</span><br>Highschool at Tumutumu Girls</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div id="services">
+    <div class="services">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+            <h2>Web Design</h2>
+            <p>I do most of my web Design using react ,html ,css ,javascript ,sass,tailwind css and material UI</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <h2>UI/UX Design</h2>
+            <p>I use Figma and webflow for my Designs</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <h2>App Design</h2>
+            <p>I am good at working with Android Studio for Mobile App development</p>
+            <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="portfolio">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./images/vehicle rental.png" alt="vehicle rental system">
+                <div class="layer">
+                    <h3>Vehicle rental management system</h3>
+                    <p>The web app helps you book a car of your choice for certain amount of fee based on the number of days you want to have it.</p>
+                    <a href="https://vehicle-rental-management-system-front-end.vercel.app/">view system</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/book repository.png" alt="book repository">
+                <div class="layer">
+                <h3>Book repository app</h3>
+                <p>The web app helps you choose and view the books available in the library base on author ,id and title</p>
+                <a href="https://book-repository-application-seven.vercel.app/">view system</a>
+            </div>
+            </div>
+            <div class="work">
+                <img src="" alt="work1">
+                <div class="layer">
+                <h3>digital property management system</h3>
+                <p>integrates various properties such as house ,cars and land to improve user experience</p>
+                <a href="">view system</a>
+            </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<div id="contact">
+<div class="contact">
+    <div class="row">
+        <div class="contact-left">
+         <h1 class="subtitle">Contact Me</h1>
+         <p>everlynmuthee35@gmail.com</p>
+         <p>+254797916373</p>
+         <div class="social-icons">
+            <a href="">linkedIn</a>
+            <a href="">instagram</a>
+            <a href="">facebook</a>
+         </div>
+         <a href="" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright &copy; Everlyn Muthoni </p>
+</div>
+</div>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwHWf4_R66H2nhmS15s8VnfOjdrGmnjJjyf_djyXldWB1Vai7hdilqFY9XswNAErCBZVQ/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg=document.getElementById("msg")
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response =>{
+        msg.innerHTML="message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+    })
+    .catch(error => console.error('Error!', error.message))
+})
+</script>
+</body>
+</html>
